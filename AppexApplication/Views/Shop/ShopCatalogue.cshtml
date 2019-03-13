@@ -1,0 +1,489 @@
+﻿
+@{
+    ViewData["Title"] = "ShopCatalogue";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/font-awesome.css" rel="stylesheet" />
+<div class="wrapper">
+    <!-- Begin main content -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Begin page section -->
+            <section class="col-sm-8 shop">
+                <h2 class="section-title-simple">Templates</h2>
+                <!-- Category heading -->
+                <div class="shop__category">
+                    <div class="shop__category__image"><img src="~/images/category-img.png" alt=""></div>
+                    <h3 class="shop__category__title">Category header goes here</h3>
+                    <p class="shop__category__text">This is category description with some text and links here</p>
+                </div>
+                <!-- End Category heading -->
+                <!-- View select -->
+                <ul class="shop__view">
+                    <li class="shop__view__item"><a class="shop__view__link" href="/Shop/ShopCatalogueList"><i class="fa-list fa"></i> List view</a></li>
+                    <li class="shop__view__item shop__view__item--active"><a class="shop__view__link" href="#"><i class="fa-th fa"></i> Grid view</a></li>
+                </ul>
+                <!-- End View select -->
+                <!-- Select form -->
+                <form class="select-form" id="select-form" name="select-form" method="get" action="#">
+                    <select class="selectpicker">
+                        <option value="0">Default sorting</option>
+                        <option value="popularity">Popularity</option>
+                        <option value="date">Date</option>
+                        <option value="category">Category</option>
+                    </select>
+                </form>
+                <!-- End Select form -->
+                <div class="clearfix"></div>
+                <div class="products-wrapper">
+                    <div class="row">
+                        <!-- Shop item -->
+                        <div class="col-sm-6">
+                            <div class="product">
+                                <a class="product__image hover-effect" href="/Shop/SingleProduct">
+                                    <img alt="" src="~/images/shop/shop-img1.jpg">
+                                    <i class="icon-circle icon-circle--thin fa fa-arrow-right"></i>
+                                </a>
+                                <div class="product__description">
+                                    <a class="product__title" href="/Shop/SingleProduct">Appcorner - Business & Technology PSD Template</a>
+                                    <p class="product__category">
+                                        Category:
+                                        <a class="product__category-link" href="#">psd templates</a>
+                                    </p>
+                                    <div class="product__price">$10</div>
+                                    <a class="btn btn-info btn--highlight" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shop item -->
+                        <!-- Shop item -->
+                        <div class="col-sm-6">
+                            <div class="product">
+                                <a class="product__image hover-effect" href="/Shop/SingleProduct">
+                                    <img alt="" src="~/images/shop/shop-img2.jpg">
+                                    <i class="icon-circle icon-circle--thin fa fa-arrow-right"></i>
+                                </a>
+                                <div class="product__description">
+                                    <a class="product__title" href="/Shop/SingleProduct">AppShow - Business & Technology PSD Template</a>
+                                    <p class="product__category">
+                                        Category:
+                                        <a class="product__category-link" href="#">psd templates</a>
+                                    </p>
+                                    <div class="product__price">$10</div>
+                                    <a class="btn btn-info btn--highlight" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shop item -->
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <!-- Shop item -->
+                        <div class="col-sm-6">
+                            <div class="product">
+                                <a class="product__image hover-effect" href="/Shop/SingleProduct">
+                                    <img alt="" src="~/images/shop/shop-img3.jpg">
+                                    <i class="icon-circle icon-circle--thin fa fa-arrow-right"></i>
+                                </a>
+                                <div class="product__description">
+                                    <a class="product__title" href="/Shop/SingleProduct">T.Joy - Flat Multipurpose HTML Template</a>
+                                    <p class="product__category">
+                                        Category:
+                                        <a class="product__category-link" href="#">html templates</a>
+                                    </p>
+                                    <div class="product__price">$15</div>
+                                    <a class="btn btn-info btn--highlight" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shop item -->
+                        <!-- Shop item -->
+                        <div class="col-sm-6">
+                            <div class="product">
+                                <a class="product__image hover-effect" href="/Shop/SingleProduct">
+                                    <img alt="" src="~/images/shop/shop-img4.jpg">
+                                    <i class="icon-circle icon-circle--thin fa fa-arrow-right"></i>
+                                </a>
+                                <div class="product__description">
+                                    <a class="product__title" href="/Shop/SingleProduct">Ecobox - Eco Friendly Business PSD Template</a>
+                                    <p class="product__category">
+                                        Category:
+                                        <a class="product__category-link" href="#">psd templates</a>
+                                    </p>
+                                    <div class="product__price">$10</div>
+                                    <a class="btn btn-info btn--highlight" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shop item -->
+                    </div>
+                    <!-- End row -->
+
+                    <div class="row">
+                        <!-- Shop item -->
+                        <div class="col-sm-6">
+                            <div class="product">
+                                <a class="product__image hover-effect" href="/Shop/SingleProduct">
+                                    <img alt="" src="~/images/shop/shop-img5.jpg">
+                                    <i class="icon-circle icon-circle--thin fa fa-arrow-right"></i>
+                                </a>
+                                <div class="product__description">
+                                    <a class="product__title" href="/Shop/SingleProduct">Appic - Business & Technology Bootstrap Template</a>
+                                    <p class="product__category">
+                                        Category:
+                                        <a class="product__category-link" href="#">html templates</a>
+                                    </p>
+                                    <div class="product__price">$15</div>
+                                    <a class="btn btn-info btn--highlight" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shop item -->
+                        <!-- Shop item -->
+                        <div class="col-sm-6">
+                            <div class="product">
+                                <a class="product__image hover-effect" href="/Shop/SingleProduct">
+                                    <img alt="" src="~/images/shop/shop-img6.jpg">
+                                    <i class="icon-circle icon-circle--thin fa fa-arrow-right"></i>
+                                </a>
+                                <div class="product__description">
+                                    <a class="product__title" href="/Shop/SingleProduct">OptimaSales - Responsive WordPress Theme</a>
+                                    <p class="product__category">
+                                        Category:
+                                        <a class="product__category-link" href="#">wordpress templates</a>
+                                    </p>
+                                    <div class="product__price">$40</div>
+                                    <a class="btn btn-info btn--highlight" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shop item -->
+                    </div>
+                    <!-- End row -->
+
+                    <div class="row">
+                        <!-- Shop item -->
+                        <div class="col-sm-6">
+                            <div class="product">
+                                <a class="product__image hover-effect" href="/Shop/SingleProduct">
+                                    <img alt="" src="~/images/shop/shop-img7.jpg">
+                                    <i class="icon-circle icon-circle--thin fa fa-arrow-right"></i>
+                                </a>
+                                <div class="product__description">
+                                    <a class="product__title" href="/Shop/SingleProduct">OptimaSales - Responsive Joomla Template</a>
+                                    <p class="product__category">
+                                        Category:
+                                        <a class="product__category-link" href="#">joomla templates</a>
+                                    </p>
+                                    <div class="product__price">$45</div>
+                                    <a class="btn btn-info btn--highlight" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shop item -->
+                        <!-- Shop item -->
+                        <div class="col-sm-6">
+                            <div class="product">
+                                <a class="product__image hover-effect" href="/Shop/SingleProduct">
+                                    <img alt="" src="~/images/shop/shop-img8.jpg">
+                                    <i class="icon-circle icon-circle--thin fa fa-arrow-right"></i>
+                                </a>
+                                <div class="product__description">
+                                    <a class="product__title" href="/Shop/SingleProduct">4 Seasons - Restaurant & Cafe HTML5/CSS3 Template</a>
+                                    <p class="product__category">
+                                        Category:
+                                        <a class="product__category-link" href="#">html templates</a>
+                                    </p>
+                                    <div class="product__price">$15</div>
+                                    <a class="btn btn-info btn--highlight" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shop item -->
+                    </div>
+                    <!-- End row -->
+
+                    <div class="row">
+                        <!-- Shop item -->
+                        <div class="col-sm-6">
+                            <div class="product">
+                                <a class="product__image hover-effect" href="/Shop/SingleProduct">
+                                    <img alt="" src="~/images/shop/shop-img9.jpg">
+                                    <i class="icon-circle icon-circle--thin fa fa-arrow-right"></i>
+                                </a>
+                                <div class="product__description">
+                                    <a class="product__title" href="/Shop/SingleProduct">Funhouse - Creative Agency PSD Template</a>
+                                    <p class="product__category">
+                                        Category:
+                                        <a class="product__category-link" href="#">psd templates</a>
+                                    </p>
+                                    <div class="product__price">$10</div>
+                                    <a class="btn btn-info btn--highlight" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shop item -->
+                        <!-- Shop item -->
+                        <div class="col-sm-6">
+                            <div class="product">
+                                <a class="product__image hover-effect" href="/Shop/SingleProduct">
+                                    <img alt="" src="images/shop/shop-img10.jpg">
+                                    <i class="icon-circle icon-circle--thin fa fa-arrow-right"></i>
+                                </a>
+                                <div class="product__description">
+                                    <a class="product__title" href="/Shop/SingleProduct">OptimApp - Responsive Business & Technology PSD</a>
+                                    <p class="product__category">
+                                        Category:
+                                        <a class="product__category-link" href="#">psd templates</a>
+                                    </p>
+                                    <div class="product__price">$10</div>
+                                    <a class="btn btn-info btn--highlight" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shop item -->
+                    </div>
+                    <!-- End row -->
+                </div>
+                <div class="row">
+                    <!-- Pagination -->
+                    <div class="col-sm-12">
+                        <div class="pagination">
+                            <a class="pagination__item pagination__item--previous pagination__item--disabled" href="#"></a>
+                            <a class="pagination__item pagination__item--active" href="#">1</a>
+                            <a class="pagination__item hidden-xs hidden-sm" href="#">2</a>
+                            <a class="pagination__item hidden-xs hidden-sm" href="#">3</a>
+                            <a class="pagination__item hidden-md hidden-lg pagination__item--etc" href="#">...</a>
+                            <a class="pagination__item hidden-xs hidden-sm" href="#">4</a>
+                            <a class="pagination__item" href="#">5</a>
+                            <a class="pagination__item pagination__item--next" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End Pagination -->
+                </div>
+                <!-- End row -->
+            </section>
+            <!-- End page section -->
+            <!-- Begin Sidebar-->
+            <aside class="col-sm-4">
+                <div class="sidebar">
+                    <!-- Search form-->
+                    <h3 class="bar-title">Search:</h3>
+                    <form class="search-form" id="search-form" name="search-form" method="get" action="#">
+                        <input id="input-search" name="input-search" type="search" placeholder="type your request" value="">
+                        <button class="submit-button" id="search-submit-button" type="submit">
+                            <i class="icon-circle icon-circle--thin fa fa-search"></i>
+                        </button>
+                    </form>
+                    <!-- End Search form-->
+                    <!-- Categories list -->
+                    <h3 class="bar-title">Categories:</h3>
+                    <ul class="categories-list">
+                        <li><a class="categories-list__item" href="#">WordPress themes (82)</a></li>
+                        <li><a class="categories-list__item" href="#">Joomla template (11)</a></li>
+                        <li><a class="categories-list__item" href="#">HTML templates (165)</a></li>
+                        <li><a class="categories-list__item" href="#">PSD templates (200)</a></li>
+                        <li><a class="categories-list__item" href="#">Muse templates (7)</a></li>
+                    </ul>
+                    <!-- End Categories list -->
+                    <!-- Accordion widget -->
+                    <h3 class="bar-title">Filter:</h3>
+                    <div class="panel-group accordion" id="accordion">
+                        <!-- Accordion item -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapseOne">
+                                        <span class="marker"></span>
+                                        Price
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapseOne">
+                                <div class="panel-body">
+                                    <!-- Slider range -->
+                                    <div class="slider-range">
+                                        <div id="slider-range__item"></div>
+                                        <p class="slider-range__label">
+                                            <label for="amount">Price:</label>
+                                            <input class="slider-range__amount" id="amount" type="text">
+                                        </p>
+                                        <a class="link-highlight" href="#">
+                                            Apply filter
+                                            <i class="icon-circle icon-circle--small fa fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <!-- End Slider range -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End accordion item -->
+                        <!-- Accordion item -->
+                        <div class="panel panel-default select-form-wrapper">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapseTwo">
+                                        <span class="marker"></span>
+                                        Page quantity
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapseTwo">
+                                <div class="panel-body">
+
+                                    <!-- Select form -->
+                                    <form class="select-form select-form--alternative" id="select-form2" name="select-form" method="get" action="#">
+                                        <select class="selectpicker" data-width="100%">
+                                            <option value="0">1-10</option>
+                                            <option value="10-20">10-20</option>
+                                            <option value="20-50">20-50</option>
+                                            <option value="50-100">50-100</option>
+                                        </select>
+                                    </form>
+                                    <!-- End Select form -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End accordion item -->
+                        <!-- Accordion item -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapseThree">
+                                        <span class="marker"></span>
+                                        Color
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapseThree">
+                                <div class="panel-body">
+                                    <!-- Color filter -->
+                                    <div class="color-filter">
+                                        <span class="color-filter__item color1"></span>
+                                        <span class="color-filter__item color2"></span>
+                                        <span class="color-filter__item color3"></span>
+                                        <span class="color-filter__item color4"></span>
+                                        <span class="color-filter__item color5"></span>
+                                        <span class="color-filter__item color6"></span>
+                                        <span class="color-filter__item color7"></span>
+                                        <span class="color-filter__item color8"></span>
+                                        <span class="color-filter__item color9"></span>
+                                        <span class="color-filter__item color10"></span>
+                                        <span class="color-filter__item color11"></span>
+                                        <span class="color-filter__item color12"></span>
+                                        <span class="color-filter__item color13"></span>
+                                        <span class="color-filter__item color14"></span>
+                                        <span class="color-filter__item color15"></span>
+                                        <span class="color-filter__item color16"></span>
+                                        <span class="color-filter__item color17"></span>
+                                        <span class="color-filter__item color18"></span>
+                                    </div>
+                                    <!-- End Color filter -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End accordion item -->
+                        <!-- Accordion item -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseFour">
+                                        <span class="marker"></span>
+                                        Filter option
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseFour">
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet quam augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End accordion item -->
+                        <!-- Accordion item -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseFive">
+                                        <span class="marker"></span>
+                                        One more filter option
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseFive">
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet quam augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End accordion item -->
+                    </div>
+                    <!-- End Accordion widget-->
+                    <!-- Popular items -->
+                    <div class="popular-item popular-item--multiple">
+                        <h3 class="decorative-lines decorated-title-margin--sm text-center"><span class="decorated-title">Popular items</span></h3>
+
+                        <!-- Popular item -->
+                        <a class="popular-item__description" href="/Shop/SingleProduct">
+                            <div class="popular-item__image hover-effect">
+                                <img src="images/shop/popular-item-img1.jpg" alt="">
+                            </div>
+                            <div class="popular-item__title">Appcorner - Business & Technology  PSD Template. <i class="icon-circle icon-circle--small fa fa-arrow-right"></i></div>
+                        </a>
+                        <!-- End Popular item -->
+                        <div class="divider-simple"></div>
+
+                        <!-- Popular item -->
+                        <a class="popular-item__description" href="/Shop/SingleProduct">
+                            <div class="popular-item__image hover-effect">
+                                <img src="images/shop/popular-item-img2.jpg" alt="">
+                            </div>
+                            <div class="popular-item__title">AppShow - Business & Technology  PSD Template. <i class="icon-circle icon-circle--small fa fa-arrow-right"></i></div>
+                        </a>
+                        <!-- End Popular item -->
+                        <div class="divider-simple"></div>
+
+                        <!-- Popular item -->
+                        <a class="popular-item__description" href="/Shop/SingleProduct">
+                            <div class="popular-item__image hover-effect">
+                                <img src="images/shop/popular-item-img3.jpg" alt="">
+                            </div>
+                            <div class="popular-item__title">OptimaSales - Responsive WordPress  Theme. <i class="icon-circle icon-circle--small fa fa-arrow-right"></i></div>
+                        </a>
+                        <!-- End Popular item -->
+                    </div>
+                    <!-- End Popular items -->
+                    <!-- Tags -->
+                    <h3 class="bar-title">Tags:</h3>
+                    <ul class="tags">
+                        <li><a class="tags__item" href="#">lorem ipsum</a></li>
+                        <li><a class="tags__item" href="#">consectetur</a></li>
+                        <li><a class="tags__item" href="#">gravida</a></li>
+                        <li><a class="tags__item" href="#">adipiscing</a></li>
+                        <li><a class="tags__item" href="#">nunc ante</a></li>
+                        <li><a class="tags__item" href="#">dapibus nec</a></li>
+                        <li><a class="tags__item" href="#">commodo nec</a></li>
+                        <li><a class="tags__item" href="#">quis justo</a></li>
+                        <li><a class="tags__item" href="#">gravida</a></li>
+                        <li><a class="tags__item" href="#">lorem ipsum</a></li>
+                        <li><a class="tags__item" href="#">consectetur</a></li>
+                        <li><a class="tags__item" href="#">adipiscing</a></li>
+                        <li><a class="tags__item" href="#">nunc ante</a></li>
+                        <li><a class="tags__item" href="#">dapibus nec</a></li>
+                        <li><a class="tags__item" href="#">commodo nec</a></li>
+                        <li><a class="tags__item" href="#">quis justo</a></li>
+                    </ul>
+                    <!-- End Tags -->
+                </div>
+            </aside>
+            <!-- End Sidebar-->
+        </div>
+        <!-- End row -->
+    </div>
+    <!-- End main content -->
+</div>
+
+
+
+
