@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,8 +12,8 @@ namespace AppexApplication.CodeLayer.Entity
         private string status;
         private string insertUser;
         private DateTime insertDate;
-        private string updateUser;
-        private DateTime updateDate;
+        private string  updateUser;
+        private Nullable<DateTime> updateDate;
         private string name;
 
         public long Id { get => id; set => id = value; }
@@ -20,7 +21,7 @@ namespace AppexApplication.CodeLayer.Entity
         public string InsertUser { get => insertUser; set => insertUser = value; }
         public DateTime InsertDate { get => insertDate; set => insertDate = value; }
         public string UpdateUser { get => updateUser; set => updateUser = value; }
-        public DateTime UpdateDate { get => updateDate; set => updateDate = value; }
+        public DateTime? UpdateDate { get => updateDate; set => updateDate = value; }
         public string Name { get => name; set => name = value; }
     }
 }

@@ -1,9 +1,9 @@
-﻿
+﻿@model AppexApplication.Models.SingleProductModel
+
 @{
     ViewData["Title"] = "SingleProduct";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <!-- Begin main content -->
 <!-- Begin page section -->
 <section class="container product--full-wrapper">
@@ -32,7 +32,7 @@
             <!-- End Carousel -->
         </div>
         <div class="col-sm-6 product product--full">
-            <h3 class="product__title">Appic - Business & Technology Bootstrap Template</h3>
+            <h3 class="product__title">@Model.Name</h3>
             <div class="product__price">$15</div>
             <div class="rating">
                 <div class="rating__stars" data-score="4.3"></div>
